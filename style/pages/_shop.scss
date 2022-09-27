@@ -30,12 +30,13 @@
 }
 
 .search {
-  border: solid 1px;
+  border: solid 2px $primary;
   a {
     background: $primary;
     padding: 6px 12px;
   }
   input {
+    padding-left: 6px;
     border: none;
     background: none;
   }
