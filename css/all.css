@@ -182,8 +182,8 @@ header {
 }
 
 header .logo {
-  background: url(../../assets/logo_w.png);
-  background: url(../../assets/logo_w@svg.svg);
+  background: url(../assets/logo_w.png);
+  background: url(../assets/logo_w@svg.svg);
   width: 120px;
   text-indent: 101%;
   overflow: hidden;
@@ -213,13 +213,13 @@ header .nav .ham-menu {
 }
 
 .banner {
-  background: right/cover url(../../assets/header_desktop.png);
+  background: right/cover url(../assets/header_desktop.png);
   height: 420px;
 }
 
 @media screen and (max-width: 576px) {
   .banner {
-    background: center/cover url(../../assets/header_mobile.png);
+    background: center/cover url(../assets/header_mobile.png);
   }
 }
 
@@ -279,8 +279,8 @@ footer .contact li {
 
 footer .logo,
 .login .logo {
-  background: url(../../assets/logo_l.png) no-repeat;
-  background: url(../../assets/logo_l@svg.svg) no-repeat;
+  background: url(../assets/logo_l.png) no-repeat;
+  background: url(../assets/logo_l@svg.svg) no-repeat;
   width: 244px;
   height: 49px;
 }
@@ -677,7 +677,7 @@ footer .logo,
 }
 
 .chef-img {
-  background: top/cover url(../../assets/main_chef_brown.png);
+  background: top/cover url(../assets/main_chef_brown.png);
   height: 460px;
   min-width: 373px;
 }

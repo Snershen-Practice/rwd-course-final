@@ -4,8 +4,8 @@ header {
   z-index: 10;
   width: 100%;
   .logo {
-    background: url(../../assets/logo_w.png);
-    background: url(../../assets/logo_w@svg.svg);
+    background: url(../assets/logo_w.png);
+    background: url(../assets/logo_w@svg.svg);
     width: 120px;
     text-indent: 101%;
     overflow: hidden;
@@ -27,10 +27,10 @@ header {
 }
 
 .banner {
-  background: right/cover url(../../assets/header_desktop.png);
+  background: right/cover url(../assets/header_desktop.png);
   height: 420px;
   @include mobile {
-    background: center/cover url(../../assets/header_mobile.png);
+    background: center/cover url(../assets/header_mobile.png);
   }
   &-title {
     background: rgba(#000, 0.35);
