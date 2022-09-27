@@ -1,0 +1,19 @@
+footer {
+  .logo {
+    margin-bottom: 22px;
+  }
+  .contact li {
+    list-style: initial;
+    margin-left: 1.25rem;
+  }
+}
+
+footer,
+.login {
+  .logo {
+    background: url(../../assets/logo_l.png) no-repeat;
+    background: url(../../assets/logo_l@svg.svg) no-repeat;
+    width: 244px;
+    height: 49px;
+  }
+}

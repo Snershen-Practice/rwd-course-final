@@ -1,0 +1,159 @@
+.shop-category {
+  margin-bottom: 24px;
+  @media (max-width: 792px) {
+    margin-right: 0;
+  }
+  a {
+    min-width: 220px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 8px;
+    border-bottom: solid 1px $primary;
+    @media (max-width: 992px) {
+      width: 100%;
+    }
+    &:hover {
+      background: $primary;
+      color: $white;
+      opacity: 1;
+    }
+  }
+}
+
+.active {
+  background: $primary;
+  color: $white;
+}
+
+.header {
+  margin-bottom: 26px;
+}
+
+.search {
+  border: solid 1px;
+  a {
+    background: $primary;
+    padding: 6px 12px;
+  }
+  input {
+    border: none;
+    background: none;
+  }
+}
+
+.shopping-cart {
+  .pay {
+    display: flex;
+    align-items: center;
+    position: relative;
+    &::after {
+      content: "";
+      margin-right: 12px;
+      margin-left: 12px;
+      height: 14px;
+      width: 2px;
+      background: $primary;
+    }
+  }
+  .shopping-num {
+    position: relative;
+    div {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: $secondary;
+      border-radius: 50%;
+      font-size: 0.75rem;
+      @include size(16px);
+      color: white;
+      position: absolute;
+      top: 0;
+      right: 0;
+      transform: translate(50%, -50%);
+    }
+  }
+}
+
+.product {
+  ul {
+    gap: 20px;
+  }
+  i {
+    margin-right: 9px;
+  }
+  img {
+    height: 120px;
+    object-fit: cover;
+  }
+  &-item {
+    width: 220px;
+    background: #efe9e7;
+    box-shadow: 3px 3px 4px 0px rgba(0, 0, 0, 0.16);
+    position: relative;
+    @media (max-width: 970px) and (min-width: 400px) {
+      width: 48%;
+    }
+    @include mobile {
+      width: 100%;
+    }
+  }
+  .like-btn {
+    top: 0;
+    left: 0;
+    position: absolute;
+    padding: 8px;
+  }
+  &-content {
+    text-align: center;
+    padding: 10px;
+  }
+  &-title {
+    margin-bottom: 20px;
+    &::after {
+      content: "";
+      display: block;
+      margin: auto;
+      margin-top: 8px;
+      height: 1px;
+      width: 91px;
+      background: $primary;
+    }
+  }
+
+  .tag-wrap {
+    overflow: hidden;
+    width: 100px;
+    height: 108px;
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    .tag {
+      width: 120px;
+      background: #00cc99;
+      font-size: 0.875rem;
+      color: $white;
+      transform: rotate(45deg) translateX(18%);
+      text-align: center;
+      position: relative;
+      font-weight: 600;
+      &::after {
+        content: "";
+        border-top: 4px solid #00a178;
+        border-left: 4px solid transparent;
+        border-right: 4px solid transparent;
+        position: absolute;
+        bottom: -5px;
+        right: 11px;
+      }
+      &::before {
+        content: "";
+        border-top: 4px solid #00a178;
+        border-left: 4px solid transparent;
+        border-right: 4px solid transparent;
+        position: absolute;
+        top: 21px;
+        left: 12px;
+      }
+    }
+  }
+}

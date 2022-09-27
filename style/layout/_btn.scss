@@ -1,0 +1,36 @@
+.btn {
+  padding: 6px 20px;
+  font-size: 0.875rem;
+  border-radius: 3px;
+}
+
+.btn-secondary {
+  background: $secondary;
+  border: solid 1px transparent;
+  &:hover {
+    opacity: 1;
+    border: solid 1px $secondary;
+    background: transparent;
+    color: $secondary;
+  }
+}
+
+.btn-outline-secondary {
+  border: solid 1px $secondary;
+  color: $secondary;
+  &:hover {
+    background: $secondary;
+    border: solid 1px transparent;
+    color: $white;
+  }
+}
+
+.btn-gray {
+  background: $gray;
+  &:hover {
+    opacity: 1;
+    border: solid 1px $gray;
+    background: transparent;
+    color: $gray;
+  }
+}

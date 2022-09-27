@@ -1,0 +1,27 @@
+.login {
+  label {
+    margin-bottom: 3px;
+    display: block;
+  }
+  input {
+    outline: none;
+    border: none;
+    background: none;
+  }
+  &-box {
+    margin-top: 36px;
+    border-top: 3px solid $secondary;
+    padding: 15px;
+    box-shadow: 3px 3px 4px 0px rgba(0, 0, 0, 0.16);
+  }
+  &-item {
+    border: solid 1px #ccc;
+    padding: 8px 10px;
+    border-radius: 3px;
+    background: $white;
+  }
+  .fa-envelop,
+  .fa-lock {
+    color: rgba(#3d1101, 0.5);
+  }
+}

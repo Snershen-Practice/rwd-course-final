@@ -1,0 +1,326 @@
+.container {
+  max-width: 940px;
+  margin: 0 auto;
+  @media (max-width: 940px) {
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+}
+
+.container-sm {
+  max-width: 620px;
+  margin: 0 auto;
+  @include mobile {
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+}
+
+.container-xs {
+  max-width: 300px;
+  margin: 0 auto;
+  @include mobile {
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+}
+
+.fw-400 {
+  font-weight: 400;
+}
+
+.fw-500 {
+  font-weight: 500;
+}
+
+.fw-900 {
+  font-weight: 900;
+}
+
+.fs-1 {
+  font-size: 3rem;
+}
+
+.fs-2 {
+  font-size: 2.25rem;
+}
+
+.fs-3 {
+  font-size: 1.5rem;
+}
+
+.fs-4 {
+  font-size: 1.25rem;
+}
+
+.fs-5 {
+  font-size: 1.125rem;
+}
+
+.fs-6 {
+  font-size: 1rem;
+}
+
+.fs-7 {
+  font-size: 0.875rem;
+}
+
+.fs-8 {
+  font-size: 0.75rem;
+}
+
+.d-block {
+  display: block;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.flex-column {
+  flex-direction: column;
+}
+
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
+.justify-content-center {
+  justify-content: center;
+}
+
+.justify-content-between {
+  justify-content: space-between;
+}
+
+.justify-content-end {
+  justify-content: flex-end;
+}
+
+.align-items-center {
+  align-items: center;
+}
+
+.align-items-start {
+  align-items: flex-start;
+}
+
+.pt-16 {
+  padding-top: 16px;
+}
+
+.ps-16 {
+  padding-left: 16px;
+}
+
+.pe-16 {
+  padding-right: 16px;
+}
+
+.pb-16 {
+  padding-bottom: 16px;
+}
+
+.px-16 {
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+.py-16 {
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+
+.py-18 {
+  padding-top: 18px;
+  padding-bottom: 18px;
+}
+
+.py-50 {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.me-12 {
+  margin-right: 12px;
+}
+
+.me-16 {
+  margin-right: 16px;
+}
+
+.me-20 {
+  margin-right: 20px;
+}
+
+.me-26 {
+  margin-right: 26px;
+}
+
+.me-30 {
+  margin-right: 30px;
+}
+
+.me-36 {
+  margin-right: 36px;
+}
+
+.mb-12 {
+  margin-bottom: 12px;
+}
+
+.mb-16 {
+  margin-bottom: 16px;
+}
+
+.mb-20 {
+  margin-bottom: 20px;
+}
+
+.mb-30 {
+  margin-bottom: 30px;
+}
+
+.mb-32 {
+  margin-bottom: 32px;
+}
+
+.mb-36 {
+  margin-bottom: 36px;
+}
+
+.my-22 {
+  margin-top: 22px;
+  margin-bottom: 22px;
+}
+
+.bg-light {
+  background: $bg-light;
+}
+
+.bg-dark {
+  background: $bg-dark;
+}
+
+.bg-primary {
+  background: $primary;
+}
+
+.text-white {
+  color: $white;
+}
+
+.text-primary {
+  color: $primary;
+}
+
+.text-secondary {
+  color: $secondary;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-end {
+  text-align: right;
+}
+
+.text-start {
+  text-align-last: left;
+}
+
+.circle {
+  border-radius: 50%;
+}
+
+.w-33 {
+  width: 33.3333%;
+}
+
+.w-50 {
+  width: 50%;
+}
+
+.w-66 {
+  width: 66%;
+}
+
+.w-100 {
+  width: 100%;
+}
+
+.mx-auto {
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.ms-auto {
+  margin-left: auto;
+}
+
+@media (max-width: 792px) and (min-width: 577px) {
+  .flex-sp1-column {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 767px) and (min-width: 577px) {
+  .flex-sp-column {
+    flex-direction: column;
+  }
+  .me-sp-0 {
+    margin-right: 0;
+  }
+  .px-sp-16 {
+    padding-right: 16px;
+    padding-left: 16px;
+  }
+  .py-sp-30 {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+  .w-sp-100 {
+    width: 100%;
+  }
+  .mb-sp-30 {
+    margin-bottom: 30px;
+  }
+  .w-sp-80 {
+    width: 80%;
+  }
+}
+
+@include mobile {
+  .flex-sm-column {
+    flex-direction: column;
+  }
+  .w-sm-100 {
+    width: 100%;
+  }
+
+  .p-sm-0 {
+    padding: 0;
+  }
+
+  .px-sm-16 {
+    padding-right: 16px;
+    padding-left: 16px;
+  }
+  .py-sm-30 {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+  .me-sm-0 {
+    margin-right: 0;
+  }
+  .mb-sm-24 {
+    margin-bottom: 24px;
+  }
+  .mb-sm-20 {
+    margin-bottom: 20px;
+  }
+  .mb-sm-30 {
+    margin-bottom: 30px;
+  }
+}

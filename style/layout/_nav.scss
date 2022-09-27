@@ -1,0 +1,39 @@
+header {
+  background: rgba($black, 0.75);
+  position: fixed;
+  z-index: 10;
+  width: 100%;
+  .logo {
+    background: url(../../assets/logo_w.png);
+    background: url(../../assets/logo_w@svg.svg);
+    width: 120px;
+    text-indent: 101%;
+    overflow: hidden;
+    white-space: nowrap;
+  }
+  .nav {
+    @include mobile {
+      visibility: hidden;
+    }
+    .ham-menu {
+      visibility: hidden;
+      display: flex;
+      align-items: center;
+      @include mobile {
+        visibility: visible;
+      }
+    }
+  }
+}
+
+.banner {
+  background: right/cover url(../../assets/header_desktop.png);
+  height: 420px;
+  @include mobile {
+    background: center/cover url(../../assets/header_mobile.png);
+  }
+  &-title {
+    background: rgba(#000, 0.35);
+    padding: 20px 32px 26px;
+  }
+}

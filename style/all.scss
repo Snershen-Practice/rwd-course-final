@@ -1,0 +1,15 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;900&display=swap");
+//font-family: 'Noto Sans TC', sans-serif;
+
+@import "./helper/variable";
+@import "./helper/mixin";
+@import "./base/reset";
+@import "./base/base";
+@import "./layout/nav";
+@import "./layout/btn";
+@import "./layout/footer";
+@import "./vendor/vendor";
+@import "./utilities/utilities";
+@import "./pages/index";
+@import "./pages/login";
+@import "./pages/shop";
