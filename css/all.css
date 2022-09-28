@@ -442,6 +442,27 @@ footer .contact li {
   padding: 5px 14px;
 }
 
+@media (max-width: 476px) {
+  .map-content {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+.map img {
+  width: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+@media (max-width: 476px) {
+  .map img {
+    width: 100%;
+  }
+}
+
 .shop-category {
   margin-bottom: 24px;
 }
