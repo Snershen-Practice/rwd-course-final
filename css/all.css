@@ -238,6 +238,42 @@ input {
   color: rgba(0, 0, 0, 0.35);
 }
 
+.container {
+  max-width: 940px;
+  margin: 0 auto;
+}
+
+@media (max-width: 970px) {
+  .container {
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+}
+
+.container-sm {
+  max-width: 620px;
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 576px) {
+  .container-sm {
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+}
+
+.container-xs {
+  max-width: 300px;
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 576px) {
+  .container-xs {
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+}
+
 header {
   background: rgba(0, 0, 0, 0.75);
   position: fixed;
@@ -301,18 +337,19 @@ footer .contact li {
   margin-left: 1.25rem;
 }
 
-.login label {
+.memberForm label {
   margin-bottom: 3px;
   display: block;
 }
 
-.login input {
+.memberForm input {
   outline: none;
   border: none;
   background: none;
+  width: 100%;
 }
 
-.login-box {
+.memberForm-box {
   margin-top: 36px;
   border-top: 3px solid #f56c23;
   padding: 15px;
@@ -320,7 +357,7 @@ footer .contact li {
           box-shadow: 3px 3px 4px 0px rgba(0, 0, 0, 0.16);
 }
 
-.login-item {
+.memberForm-item {
   border: solid 1px #ccc;
   padding: 8px 10px;
   border-radius: 3px;
@@ -349,7 +386,7 @@ footer .contact li {
     height: 300px;
     width: 100%;
     min-width: 100%;
-    margin-right: 0;
+    margin-right: 0 !important;
   }
 }
 
@@ -440,26 +477,26 @@ footer .contact li {
   color: #fff;
 }
 
-.header {
+.cart-header {
   margin-bottom: 26px;
 }
 
-.search {
+.cart-header .cart-search {
   border: solid 2px #3d1101;
 }
 
-.search a {
+.cart-header .cart-search a {
   background: #3d1101;
   padding: 6px 12px;
 }
 
-.search input {
+.cart-header .cart-search input {
   padding-left: 6px;
   border: none;
   background: none;
 }
 
-.shopping-cart .pay {
+.cart-header .cart-btn-wrapper .cart-btn {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -469,7 +506,7 @@ footer .contact li {
   position: relative;
 }
 
-.shopping-cart .pay::after {
+.cart-header .cart-btn-wrapper .cart-btn::after {
   content: "";
   margin-right: 12px;
   margin-left: 12px;
@@ -478,11 +515,11 @@ footer .contact li {
   background: #3d1101;
 }
 
-.shopping-cart .shopping-num {
+.cart-header .cart-btn-wrapper .cart-num {
   position: relative;
 }
 
-.shopping-cart .shopping-num div {
+.cart-header .cart-btn-wrapper .cart-num div {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -509,14 +546,14 @@ footer .contact li {
   gap: 20px;
 }
 
-.product i {
-  margin-right: 9px;
-}
-
 .product img {
   height: 120px;
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+.product .fa-cart-shopping {
+  margin-right: 9px;
 }
 
 .product-item {
@@ -533,7 +570,13 @@ footer .contact li {
   }
 }
 
-@media screen and (max-width: 576px) {
+@media (max-width: 576px) {
+  .product-item {
+    width: 47%;
+  }
+}
+
+@media (max-width: 375px) {
   .product-item {
     width: 100%;
   }
@@ -565,7 +608,7 @@ footer .contact li {
   background: #3d1101;
 }
 
-.product .tag-wrap {
+.product-tag-wrapper {
   overflow: hidden;
   width: 100px;
   height: 108px;
@@ -574,7 +617,7 @@ footer .contact li {
   right: -5px;
 }
 
-.product .tag-wrap .tag {
+.product-tag-wrapper .product-tag {
   width: 120px;
   background: #00cc99;
   font-size: 0.875rem;
@@ -586,7 +629,7 @@ footer .contact li {
   font-weight: 600;
 }
 
-.product .tag-wrap .tag::after {
+.product-tag-wrapper .product-tag::after {
   content: "";
   border-top: 4px solid #00a178;
   border-left: 4px solid transparent;
@@ -596,7 +639,7 @@ footer .contact li {
   right: 11px;
 }
 
-.product .tag-wrap .tag::before {
+.product-tag-wrapper .product-tag::before {
   content: "";
   border-top: 4px solid #00a178;
   border-left: 4px solid transparent;
@@ -604,42 +647,6 @@ footer .contact li {
   position: absolute;
   top: 21px;
   left: 12px;
-}
-
-.container {
-  max-width: 940px;
-  margin: 0 auto;
-}
-
-@media (max-width: 940px) {
-  .container {
-    padding-right: 10px;
-    padding-left: 10px;
-  }
-}
-
-.container-sm {
-  max-width: 620px;
-  margin: 0 auto;
-}
-
-@media screen and (max-width: 576px) {
-  .container-sm {
-    padding-right: 10px;
-    padding-left: 10px;
-  }
-}
-
-.container-xs {
-  max-width: 300px;
-  margin: 0 auto;
-}
-
-@media screen and (max-width: 576px) {
-  .container-xs {
-    padding-right: 10px;
-    padding-left: 10px;
-  }
 }
 
 .fw-400 {
@@ -881,6 +888,10 @@ footer .contact li {
 
 .w-100 {
   width: 100%;
+}
+
+.h-100 {
+  height: 100%;
 }
 
 .mx-auto {

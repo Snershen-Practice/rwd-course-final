@@ -14,7 +14,7 @@
       height: 300px;
       width: 100%;
       min-width: 100%;
-      margin-right: 0;
+      margin-right: 0 !important;
     }
     @include pad {
       height: 460px;

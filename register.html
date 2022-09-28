@@ -1,9 +1,26 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-TW">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Jamie" />
+    <meta
+      name="description"
+      content="六角西餐廳提供美味餐點，包括漢堡、薯條、香腸等多種套餐"
+    />
+    <meta property="og:title" content="六角西餐廳" />
+    <meta
+      property="og:description"
+      content="六角西餐廳提供美味餐點，包括漢堡、薯條、香腸等多種套餐"
+    />
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:url"
+      content="https://snershen.github.io/rwd-course-final/"
+    />
+    <meta property="og:image" content="./assets/logo_l.png" />
+
     <title>六角西餐廳</title>
     <link
       href="https://fonts.googleapis.com/icon?family=Material+Icons"
@@ -20,7 +37,7 @@
       <div class="container d-flex align-items-center justify-content-between">
         <a href="index.html"><h1 class="nav-logo">六角西餐廳</h1></a>
         <ul class="nav d-flex">
-          <li><a href="#" class="px-16 py-18">特色</a></li>
+          <li><a href="store.html" class="px-16 py-18">特色</a></li>
           <li><a href="#" class="px-16 py-18">主廚</a></li>
           <li><a href="#" class="ps-16 py-18">地圖</a></li>
           <li class="ham-menu">
@@ -41,11 +58,11 @@
         </p>
       </div>
     </div>
-    <section class="login bg-dark py-50 text-primary">
+    <section class="memberForm bg-dark py-50 text-primary">
       <div class="container-sm">
         <div class="logo mx-auto"></div>
         <p class="fs-4 fw-500 text-center">享受美食好味道</p>
-        <div class="login-box">
+        <div class="memberForm-box">
           <h2 class="fs-5 fw-900 text-center mb-16">REGISTER</h2>
           <div class="d-flex flex-sm-column">
             <div class="w-50 me-20 w-sm-100 mb-sm-30">
@@ -59,20 +76,22 @@
             </div>
             <form class="w-50 w-sm-100">
               <label for="email">Email Address*</label>
-              <div class="login-item mb-16 d-flex align-items-center">
+              <div class="memberForm-item mb-16 d-flex align-items-center">
                 <i class="fa-regular fa-envelope fa-xs"></i>
                 <input id="email" type="mail" />
               </div>
               <label for="password">Password*</label>
-              <div class="login-item d-flex align-items-center mb-12">
+              <div class="memberForm-item d-flex align-items-center mb-12">
                 <i class="fa-solid fa-lock fa-xs"></i>
                 <input id="password" type="password" />
               </div>
-              <div class="login-item d-flex align-items-center">
+              <div class="memberForm-item d-flex align-items-center">
                 <i class="fa-solid fa-lock fa-xs"></i>
                 <input id="password" type="password" />
               </div>
-              <a href="#" class="text-secondary mb-30 fs-7">已經有帳號了？</a>
+              <a href="login.html" class="text-secondary mb-30 fs-7"
+                >已經有帳號了？</a
+              >
               <div class="d-flex justify-content-end">
                 <a href="index.html" class="btn-secondary w-50 text-center btn"
                   >註冊</a
